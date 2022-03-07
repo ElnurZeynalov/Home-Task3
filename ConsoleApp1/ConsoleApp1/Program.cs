@@ -12,8 +12,9 @@ namespace ConsoleApp1
             char y = Convert.ToChar(Console.ReadLine());
             Search(x,y);
         }
-        static void Search(string cumle, char herf , int total=0)
+        static void Search(string cumle, char herf)
         {
+            int total = 0;
             for (int i = 0; i < cumle.Length; i++)
             {
                 if (cumle[i] == herf)
