@@ -7,24 +7,24 @@ namespace ConsoleApp1
         static void Main()
         {
             Console.Write("Herf axtaricalaq cumleni daxil edin: ");
-            string x = Console.ReadLine();
-            Console.Write("axtarilacaq herfi daxil edin: ");
-            char y = Convert.ToChar(Console.ReadLine());
-            Search(x,y);
+            string Sentence = Console.ReadLine();
+            Console.Write("Axtarilacaq herfi daxil edin: ");
+            char Letter = Convert.ToChar(Console.ReadLine());
+            Search(Sentence, Letter);
         }
-        static void Search(string cumle, char herf)
+        static void Search(string Sentence, char Letter)
         {
             int total = 0;
-            for (int i = 0; i < cumle.Length; i++)
+            for (int i = 0; i < Sentence.Length; i++)
             {
-                if (cumle[i] == herf)
+                if (Sentence[i] == Letter)
                     total++;
                 
             }
             if(total != 0)
-                Console.WriteLine("Bu sozde "+ total +" eded " + herf +" herfi var");
+                Console.WriteLine("Bu sozde "+ total +" eded " + Letter +" herfi var");
             else
-            Console.WriteLine("Bu sozde " + herf + " herfi yoxdur!" );
+            Console.WriteLine("Bu sozde " + Letter + " herfi yoxdur!" );
         }
     }
 }
