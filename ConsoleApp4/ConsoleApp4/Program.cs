@@ -29,19 +29,19 @@ namespace ConsoleApp4
         }
         static void Circle_Area() 
         {
-            int pi = 3;
+            int pi = 3;//pi -- π ~ 3
             int area = 0 ;
             Console.Write("Cevrenin radiusunu daxil edin: ");
-            int r = Convert.ToInt32(Console.ReadLine());
+            int r = Convert.ToInt32(Console.ReadLine()); //r -- Radius
             area = pi * r * r;
             Console.Write("Cevrenin sahesi: "+ area);
         }
         static void Rectangular_Area()
         {
             Console.Write("Duzbucaqlinin enini daxil edin : ");
-            int a = Convert.ToInt32(Console.ReadLine());
+            int a = Convert.ToInt32(Console.ReadLine());//a -- Rectangular first side
             Console.Write("Duzbucaqlinin uzunlugunu daxil edin : ");
-            int b = Convert.ToInt32(Console.ReadLine());
+            int b = Convert.ToInt32(Console.ReadLine());//b -- Rectangular second side
             int area = 0;
             area = a*b;
             Console.Write("Duzbucaqlinin sahesi: " + area);
@@ -49,14 +49,14 @@ namespace ConsoleApp4
         static void Circle_Area_Inside_Triangle()
         {
             Console.Write("Ucbucaqlinin 1-ci terefinin uzunlugunu daxil edin: ");
-            int a = Convert.ToInt32(Console.ReadLine());
+            int a = Convert.ToInt32(Console.ReadLine());//a -- Triangle first side
             Console.Write("Ucbucaqlinin 2-ci terefinin uzunlugunu daxil edin: ");
-            int b = Convert.ToInt32(Console.ReadLine());
+            int b = Convert.ToInt32(Console.ReadLine());//b -- Triangle second side
             Console.Write("Ucbucaqlinin 3-cu terefinin uzunlugunu daxil edin: ");
-            int c = Convert.ToInt32(Console.ReadLine());
+            int c = Convert.ToInt32(Console.ReadLine());//c -- Triangle third side
             int Circle_Perimeter = (a * b * c)/2;
             Console.Write("Cevrenin radiusunu daxil edin: ");
-            int r = Convert.ToInt32(Console.ReadLine());
+            int r = Convert.ToInt32(Console.ReadLine()); //r -- Radius
             int area = Circle_Perimeter * r;
             Console.WriteLine("Ucbucaqlinin daxiline cekilmis Cevrenin sahesi: " + area);
 
